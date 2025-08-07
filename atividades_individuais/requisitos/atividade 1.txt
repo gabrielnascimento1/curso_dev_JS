@@ -18,4 +18,6 @@ feedback ao usuario (exemplo senha incorreta, cadastro efetuado com sucesso e et
 
 RN
 cada usuario poderá ter somente um cadastro
-cada senha deverá conter números e letras 
+cada senha deverá conter números e letras
+
+

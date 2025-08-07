@@ -1,0 +1,22 @@
+Atividade 2 
+
+RF
+cadastro de usuario (nome, CPF, data de nascimento, endereço completo, email)
+login e senha
+entrega rastreada
+cupom de desconto para primeira compra (10%)
+forma de pagamento(cartão de débito, crédito e PIX)
+cardapio (lanches e bebidas)
+alterar cardapipo (tirar alface, substituir molho "X" por "Y", acrescentar bacon e etc)
+
+
+RNF
+ciptografia de dados
+acessibilidade
+sitesma rápido, prático e intuitivo 
+feedback ao usuario(pedido feito com sucesso, seu pedido esta a caminho, seu pedido estará pronto para retirada em x minutos)
+log 
+backup
+
+RN
+taxa fixa de entrega (5 reais)
