@@ -1,0 +1,21 @@
+RF
+login - cpf e senha
+alterar senha
+recuperação de senha
+cadastro de usuarios - nome completo, cpf, data de nascimento e email
+confirmar cadastro
+excluir cadastro
+
+
+RNF
+criptografia de dados
+velocidade no sistema
+acessibilidade
+log
+backup
+intuitividade
+feedback ao usuario (exemplo senha incorreta, cadastro efetuado com sucesso e etc)
+
+RN
+cada usuario poderá ter somente um cadastro
+cada senha deverá conter números e letras 
