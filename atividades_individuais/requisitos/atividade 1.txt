@@ -2,13 +2,14 @@ RF
 login - cpf e senha
 alterar senha
 recuperação de senha
-cadastro de usuarios - nome completo, cpf, data de nascimento e email
+cadastro de usuarios - nome completo, cpf, data de nascimento, telefone e email
 confirmar cadastro
 excluir cadastro
 
 
 RNF
 criptografia de dados
+LGPD
 velocidade no sistema
 acessibilidade
 log
@@ -18,6 +19,9 @@ feedback ao usuario (exemplo senha incorreta, cadastro efetuado com sucesso e et
 
 RN
 cada usuario poderá ter somente um cadastro
-cada senha deverá conter números e letras
+cada senha deverá conter números e letras  (min 12 char)
+aceitar termos
+
+
 
 

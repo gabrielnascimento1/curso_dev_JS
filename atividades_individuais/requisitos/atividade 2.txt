@@ -1,7 +1,7 @@
 Atividade 2 
 
 RF
-cadastro de usuario (nome, CPF, data de nascimento, endereço completo, email)
+cadastro de usuario (nome, CPF, data de nascimento, endereço completo,telefone e email)
 login e senha
 entrega rastreada
 cupom de desconto para primeira compra (10%)
@@ -17,6 +17,12 @@ sitesma rápido, prático e intuitivo
 feedback ao usuario(pedido feito com sucesso, seu pedido esta a caminho, seu pedido estará pronto para retirada em x minutos)
 log 
 backup
+permissão de usuário 
+LGPD
+sistema 24/7
+
 
 RN
 taxa fixa de entrega (5 reais)
+pagamento somente via Pix e cartão (débito e crédito)
+
