@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Condicionais</title>
+</head>
+<body>
+
+    <p>aperte F12 para ver as respostas!</p>
+
+    <script>
+
+        //IF, ELSE, ELSE IF, SWITCH
+
+        const idade = 15
+        // IF (CONDICAO) {  }
+        if (idade >= 18){
+            console.log("Maior de idade")
+        }else {
+                console.log("Menor de idade")
+            }
+        
+        
+            
+        console.log(idade >= 18 ? "maior de idade" : "menor de idade!")
+
+        nota = 80
+
+
+        console.log(nota >= 0 && nota <=100 ? (nota >= 90 ? "Ótimo" : nota >= 60 && nota <90 ? "Bom" : nota >= 30 && nota < 60 ? "Precisa melhorar": "Reprovado") : "Nota Inválida")
+
+
+        const nome = "Gabriel"
+
+        if (nome){
+            console.log(nome)
+
+        } else{
+            console.log("nome não digitado")
+        }
+
+        // 1 = domingo.....
+        const dia = 3
+
+        switch (dia){
+            case 1: // ===
+                console.log("Final de semana")
+                break
+            case 2:
+            case 3:
+            case 4: 
+            case 5: 
+            case 6:
+                console.log("semana")
+                
+            
+        }
+
+        
+            
+            
+
+        
+
+        
+
+
+    </script>
+    
+</body>
+</html>
