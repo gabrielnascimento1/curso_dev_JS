@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios Arrays_Objetos</title>
+</head>
+<body>
+    <h1>Exercicios Arrays_Objetos</h1>
+
+    <p>Aperte f12 para ver o resultado</p>
+
+
+    <script>
+
+        //exercício 1 
+
+        const playlist = ["Fé", "Graça","Garota de ipanema","pra onde irei"]
+        console.log(playlist[0])
+
+        playlist.push("nego drama")
+        console.log(playlist)
+
+       playlist.pop()
+       console.log(playlist)
+
+       console.log(playlist.length)
+
+
+       //exercício 2
+
+       function exercicio2(){
+
+        filme = {
+            titulo : "Velozes e furiosos 7",
+            diretor : "James Wan",
+            ano : 2015,
+        }
+        console.log(`O filme ${filme.titulo}, foi dirigido por ${filme.diretor}, foi lançado em ${filme.ano}`)
+
+
+        filme.personagens = ["Dom", "Brian", "Hobbs"]
+        console.log(filme.personagens[0])
+        console.log(filme)
+
+       }
+       
+       exercicio2()
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
