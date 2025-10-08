@@ -8,11 +8,80 @@
 //Desconto: O desconto percentual é aplicado sobre a soma de todos os custos únicos (páginas + design + taxa de urgência).
 
 const rnPrecoPorPagina = 500
-const rnPrecoAdicionalDesing = 1000
+const rnPrecoAdicionalDesign = 1000
 
 document.querySelector(".seu-nome").textContent = "Gabriel Nascimento"
 
 const inputPaginas = document.querySelector("#qtd-paginas")
 const inputPrazo = document.querySelector("#prazo-entrega")
 const inputDesconto = document.querySelector("#desconto")
-const checkboxDesing = document.querySelector("#inclui-design")
+const checkboxDesign = document.querySelector("#inclui-design")
+
+// views 
+
+const resumoSubtotal = document.querySelector("#resumo-subtotal")
+const resumoAdicional = document.querySelector("#resumo-adicional")
+const resumoUrgencia = document.querySelector("#resumo-urgencia")
+const resumoDesconto = document.querySelector("#resumo-desconto")
+const resumoTotal = document.querySelector("#resumo-total")
+
+const calcularSubtotal = (quantidade) => quantidade * rnPrecoPorPagina //numero de pagina * 500 
+
+function calcularTaxaDeUrgencia(prazo, valor) {
+    if (prazo > 0 && prazo < 5) {
+        return valor * 0.1
+    } else if (prazo >= 5 && prazo < 15) {
+        return valor * 0.05
+    } else {
+        return 0
+    }
+}
+
+const calcularValorDesconto = (valor, porcentagem) => valor * (porcentagem / 100)
+
+function gerarValorTotal() {
+    const qtdPaginas = Number(inputPaginas.value);
+    const prazo = Number(inputPrazo.value);
+    const porcentagemDesconto = Number(inputDesconto.value);
+    const incluirDesign = checkboxDesign.checked; // true/ false
+
+
+    const subtotal = calcularSubtotal(qtdPaginas)
+    const valorDesign = incluirDesign ? rnPrecoAdicionalDesign : 0
+
+    const taxaUrgencia = calcularTaxaDeUrgencia(prazo, (subtotal + valorDesign))
+
+    const valorDesconto = calcularValorDesconto((subtotal + valorDesign + taxaUrgencia), porcentagemDesconto)
+
+    const total = (subtotal + valorDesign + taxaUrgencia) - valorDesconto
+
+
+    const formatarValores = (valor) => {
+        return valor.toLocaleString("pt-BR", {
+            style: "currency",
+            currency: "BRL"
+        })
+    }
+
+    resumoSubtotal.textContent = formatarValores(subtotal)
+    resumoAdicional.textContent = formatarValores(valorDesign)
+    resumoUrgencia.textContent = "+ " + formatarValores(taxaUrgencia)
+    resumoDesconto.textContent = "- " + formatarValores(valorDesconto)
+    resumoTotal.textContent = formatarValores(total)
+
+
+
+}
+
+const todosInputs = [inputPaginas, inputDesconto, checkboxDesign]
+
+todosInputs.forEach(input => {
+    input.addEventListener('input',gerarValorTotal);
+})
+
+document.addEventListener('DOMContentLoaded', gerarValorTotal)
+
+
+
+
+
