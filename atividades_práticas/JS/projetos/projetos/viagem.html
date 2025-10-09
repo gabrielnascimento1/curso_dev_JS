@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Custo de Viagem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="distancia-km" class="form-label">Distância (km)</label>
+                    <input type="number" class="form-control" id="distancia-km" placeholder="distancia-km">
+                </div>
+                <div class="mb-3">
+                    <label for="preco-combustivel" class="form-label">Preço do combustível</label>
+                    <input type="number" class="form-control" id="preco-combustivel" placeholder="preco-combustivel ">
+                </div>
+                <div class="mb-3">
+                    <label for="consumo-km/l" class="form-label">Consumo (km/L)</label>
+                    <input type="number" class="form-control" id="consumo" placeholder="consumo-km/l">
+                </div>
+                <div class="mb-3">
+                    <label for="numero-viajantes" class="form-label">Numero de Viajantes </label>
+                    <input type="number" class="form-control" id="numero-viajantes" placeholder="numero-viajantes">
+                </div>
+            
+            <div class="alert alert-primary" id="custo-total" role="alert">
+                Custo total da viagem
+            </div>
+            <div class="alert alert-secondary" id="custo-pessoa" role="alert">
+                Custo total por pessoa
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="viagem.js"></script>
+</body>
+
+</html>
