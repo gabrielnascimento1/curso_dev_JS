@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+
+
+        const conta1 = {titular: "Gabriel", saldo: 500}
+        const conta2 = {titular: "Jaque", saldo: 5000}
+
+        function exibirSaldo(conta){
+            console.log(`O saldo da conta é ${conta.saldo}`)
+
+        }
+
+        exibirSaldo(conta1)
+        exibirSaldo(conta2)
+
+        class ContaBancaria{
+            constructor(titular, saldoInicial){
+                this.titular = titular
+                this.saldoInicial = saldoInicial
+            }
+            exibirSaldo(){
+            console.log(`O saldo da conta é ${this.saldo}`)
+        }
+
+
+        }
+
+      
+
+        const contaGabriel = new ContaBancaria("Gabriel", 500)
+        const contaJaque = new ContaBancaria("Jaque", 5000)
+
+        contaGabriel.exibirSaldo()
+
+    </script>
+</body>
+</html>
